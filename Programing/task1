@@ -1,0 +1,9 @@
+Identifying the Topic 
+Lab6Task1.java 这个例子展示了数字1到10的总和。
+
+int sum = 0；
+while (sum < 10) {
+sum = sum + 1；
+System.out.println("sum is " + sum // sum is 45 What happens if the loop is mistakenly written as follows? int sumwhile {   sum; infinite loop } An example...the title is too long and some information has been omitted. 
+In the original correct code, the loop condition is i < 10, and i++ is executed in each iteration of the loop, which means that the value of i will increase from 1 to 9 gradually in each iteration, and the value of i is accumulated into sum in each iteration. 
+In the incorrect code, the loop condition is still i < 10, but in the loop body, the statement is sum = sum + 1, not sum = sum + i, and i is not incremented. This causes the loop to continue indefinitely because i's value remains 1, which satisfies the condition i < 10, thus forming an infinite loop.

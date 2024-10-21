@@ -1,0 +1,13 @@
+// The for Loop (Example 5.7)
+public class Test {
+    public void main(String[] args) {
+        // 以下代码存在错误，正确的应该如下修改：
+        // for循环后面不应该有分号
+        // if和while后面如果只有一句代码，也不应该有分号
+        int sum = 0;
+        for (int i = 0; i < 10; i++) {
+            sum += i;
+        }
+        System.out.println(sum);
+    }
+}
